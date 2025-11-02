@@ -230,27 +230,19 @@ with tab1:
         with st.expander("SVM"): 
             display_not_available()
 
+        with st.expander("XGBoost Classifier"): 
+            display_not_available()
+        
+        with st.expander("CatBoost Classifier"): 
+            display_not_available()
+
     with col2:
         st.header("Unsupervised Learning")
 
         with st.expander("KMeans Clustering"): 
             display_not_available()
         
-        with st.expander("DBSCAN"): 
-            display_not_available()
-            
-        with st.expander("XGBoost"): 
-            display_not_available()
-        
-        with st.expander("CatBoost"): 
-            display_not_available()
-        
-        with st.expander("PCA"):
-            display_not_available()
-
-        st.header("Reinforcement Learning")
-
-        with st.expander("RL"): 
+        with st.expander("DBSCAN Clustering"):
             display_not_available()
 
 with tab2:
@@ -277,9 +269,6 @@ with tab2:
 
         with st.expander("YOLO"): 
             display_not_available()
-        
-        with st.expander("U-Net"): 
-            display_not_available()
             
         st.header("Speech / Audio")
 
@@ -292,9 +281,9 @@ with tab2:
         with st.expander("Sentiment Analysis (BERT)"): 
             display_not_available()
         
-        with st.expander("AI Chatbot (RAG)"): 
+        with st.expander("AI Chatbot (RAG)"):
             display_not_available()
-        
+
         with st.expander("NER"): 
             display_not_available()
 
@@ -321,15 +310,13 @@ with tab3:
     with col2:
         st.header("Time Series Forecasting")
         
-        with st.expander("RNN/LSTM"): 
+        with st.expander("RNN"): 
             display_not_available()
         
-        with st.expander("ARIMA"): 
+        with st.expander("LSTM (single step)"):
             display_not_available()
-
-        st.header("Robotics / Autonomous System")
         
-        with st.expander("AGV/Robot"): 
+        with st.expander("LSTM (multi step)"): 
             display_not_available()
 
 
