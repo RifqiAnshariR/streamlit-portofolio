@@ -25,15 +25,6 @@
             "details": [
                 "Final Project Score: 85 out of 100."
             ]
-        },
-        {
-            "role": "Mechanical Division, KRSBI Beroda",
-            "company": "Universitas Indonesia Robotics Team",
-            "duration": "Mar 2020 – Mar 2021",
-            "description": "Designed, implemented, and maintained mechanical systems for keeper and striker robots.",
-            "details": [
-                "Participated in the 2021 Indonesian Robot Contest (KRI 2021)."
-            ]
         }
     ],
     "educations": [
@@ -64,33 +55,33 @@
     "projects": [
         {
             "title": "PLC and HMI Programming for Schneider-Based Cream Spreader Machine SCS-1H (PT. Sugitama)",
-            "description": "Jul 2022",
-            "technologies": [],
+            "description": "Developed PLC programs and HMI interfaces for a wafer machine system with three stages: tracking, creaming, cream spreading, and stacking, as well as a boiler machine controlled by PID.",
+            "technologies": ["Schneider PLC", "Vijeo Designer", "Modbus", "PID Control"],
             "link": ""
         },
         {
             "title": "Image Classifier using CNN Algorithm",
-            "description": "March 2025",
-            "technologies": [],
-            "link": ""
+            "description": "Developed a convolutional neural network (CNN) to classify image datasets with high accuracy. Implemented using Pytorch in Jupyter Notebook.",
+            "technologies": ["Python", "Pytorch"],
+            "link": "https://github.com/RifqiAnshariR/cnn_image_classifier_jupyter_notebook_projects.git"
         },
         {
             "title": "RFM Analysis Online Retail",
-            "description": "Apr 2025",
-            "technologies": [],
-            "link": ""
+            "description": "Performed RFM (Recency, Frequency, Monetary) segmentation on online retail transaction data to identify customer groups. Done in Jupyter Notebook.",
+            "technologies": ["Python", "Pandas", "Matplotlib"],
+            "link": "https://github.com/RifqiAnshariR/rfm-analysis-jupyter-notebook-project.git"
         },
         {
             "title": "Neural Networks from Scratch",
-            "description": "Mei 2025",
-            "technologies": [],
-            "link": ""
+            "description": "Implemented neural networks manually without core ML libraries. Focused on understanding core operations.",
+            "technologies": ["Python", "Numpy", "Streamlit"],
+            "link": "https://github.com/RifqiAnshariR/scratch-neural-networks.git"
         },
         {
             "title": "Random Forest Classifier with Flask API",
-            "description": "Mar 2025",
-            "technologies": [],
-            "link": ""
+            "description": "Developed a machine learning API service that predicts wine quality using Random Forest Classifier. Trained the model and exposed the prediction endpoint via REST API using Flask.",
+            "technologies": ["Python", "scikit-learn", "Flask"],
+            "link": "https://github.com/RifqiAnshariR/random-forest-classifier-flask-api-wine-quality-prediction.git"
         }
     ],
     "skills": [
