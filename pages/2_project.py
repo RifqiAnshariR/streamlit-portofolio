@@ -43,9 +43,8 @@ def get_image(file_path):
 
 
 try:
-    dataset_attributes_info = get_json(Config.DATASET_ATTRIBUTES_PATH)
-    model_attributes_info = get_json(Config.MODEL_ATTRIBUTES_PATH)
-    train_records_info = get_json(Config.TRAIN_RECORDS_PATH)
+    dataset_attributes = get_json(Config.DATASET_ATTRIBUTES_PATH)
+    train_records = get_json(Config.TRAIN_RECORDS_PATH)
 except FileNotFoundError:
     st.error("File not found.")
     st.stop()
@@ -56,25 +55,28 @@ except json.JSONDecodeError:
 try:
     linear_regression_outlier_img = get_image(Config.OUTLIER_PLOT_ADVERTISING)
     linear_regression_distribution_img = get_image(Config.DISTRIBUTION_PLOT_ADVERTISING)
-    random_forest_outlier_img = get_image(Config.OUTLIER_PLOT_WINEQUALITY)
-    random_forest_confusion_matrix_img = get_image(Config.CONFUSION_MATRIX_PLOT_WINEQUALITY)
-    cnn_loss_img = get_image(Config.LOSS_PLOT_MNIST)
-    cnn_confusion_matrix_img = get_image(Config.CONFUSION_MATRIX_PLOT_MNIST)
+    random_forest_outlier_img = get_image(Config.OUTLIER_PLOT_WINE_QUALITY)
+    random_forest_confusion_matrix_img = get_image(Config.CONFUSION_MATRIX_PLOT_WINE_QUALITY)
+    cnn_loss_img = get_image(Config.LOSS_PLOT_MNIST_DIGIT)
+    cnn_confusion_matrix_img = get_image(Config.CONFUSION_MATRIX_PLOT_MNIST_DIGIT)
 except FileNotFoundError:
     st.error("File not found.")
+    st.stop()
 except AttributeError as e:
     st.error(f"Error: Ensure image paths exist in config.py. Detail: {e}")
+    st.stop()
 
 
-advertising_dataset_info = dataset_attributes_info.get("advertising", {})
-wine_quality_dataset_info = dataset_attributes_info.get("wine_quality", {})
+advertising_dataset_info = dataset_attributes.get("advertising", {})
+wine_quality_dataset_info = dataset_attributes.get("wine_quality", {})
+mnist_digit_dataset_info = dataset_attributes.get("mnist_digit", {})
 
-linear_regression_model_info = model_attributes_info.get("linear_regression", {})
-linear_regression_train_info = train_records_info.get("linear_regression", {})
-random_forest_model_info = model_attributes_info.get("random_forest", {})
-random_forest_train_info = train_records_info.get("random_forest", {})
-cnn_model_info = model_attributes_info.get("cnn", {})
-cnn_train_info = train_records_info.get("cnn", {})
+linear_regression_model_info = train_records.get("linear_regression", {})
+linear_regression_train_info = train_records.get("linear_regression", {})
+random_forest_model_info = train_records.get("random_forest", {})
+random_forest_train_info = train_records.get("random_forest", {})
+cnn_model_info = train_records.get("cnn", {})
+cnn_train_info = train_records.get("cnn", {})
 
 ADVERTISING_TOP_5_ROWS = advertising_dataset_info.get("top_5_rows", [])
 ADVERTISING_DATA_COUNT = advertising_dataset_info.get('data_count', 'N/A')
@@ -90,6 +92,8 @@ WINE_QUALITY_FEATURE_NAMES = wine_quality_dataset_info.get('feature_names', 'N/A
 WINE_QUALITY_DATA_TYPES = wine_quality_dataset_info.get("data_types", {})
 WINE_QUALITY_DUPLICATE_COUNT = wine_quality_dataset_info.get("duplicate_count", "N/A")
 WINE_QUALITY_MISSING_VALUES = wine_quality_dataset_info.get("missing_values", {})
+MNIST_DIGIT_DATA_COUNT = mnist_digit_dataset_info.get("data_count", "N/A")
+MNIST_DIGIT_IMAGE_SIZE = mnist_digit_dataset_info.get("image_size", "N/A")
 
 LINEAR_REGRESSION_PARAMS = linear_regression_model_info.get("params", {})
 LINEAR_REGRESSION_METRICS = linear_regression_train_info.get("metrics", {})

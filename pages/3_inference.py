@@ -29,7 +29,6 @@ def get_json(file_path):
 
 try:
     dataset_attributes_info = get_json(Config.DATASET_ATTRIBUTES_PATH)
-    model_attributes_info = get_json(Config.MODEL_ATTRIBUTES_PATH)
     train_records_info = get_json(Config.TRAIN_RECORDS_PATH)
 except FileNotFoundError:
     st.error("File not found.")
@@ -127,7 +126,7 @@ def handle_tabular_model(feature_names, model_name):
             predictions = result.get("prediction", [])
 
             if file_uploaded:
-                st.subheader("Batch Prediction Results")
+                st.subheader("Batch Prediction Results:")
                 df_pred = pd.DataFrame(predictions, columns=["Prediction"])
                 df_result = pd.concat([df.reset_index(drop=True), df_pred.reset_index(drop=True)], axis=1)
                 
@@ -135,15 +134,12 @@ def handle_tabular_model(feature_names, model_name):
                 download_csv(df_result, file_name=f"{model_name}_predictions.csv")
             
             else:
-                st.subheader("Prediction Result")
-                prediction_val = predictions[0] if predictions else "N/A"
-                try:
-                    prediction_val = f"{float(prediction_val):,.2f}"
-                except (ValueError, TypeError):
-                    pass
-                
+                st.subheader("Prediction Result:")
                 with st.container(border=True):
-                    st.metric(label=f"Result ({model_name})", value=prediction_val)
+                    if isinstance(predictions[0], float):
+                        st.subheader(f"{predictions[0]:.2f}")
+                    else:
+                        st.subheader(predictions[0])
 
 def handle_image_model(image_size, model_name):
     if not image_size or not model_name:
@@ -194,14 +190,16 @@ st.divider()
 
 with st.sidebar:
     st.subheader("Available model(s):")
-    selected_model = st.radio("Model:", options=model_attributes_info.keys(), label_visibility="collapsed")
+    selected_model = st.radio("Model:", 
+                              options=["Linear Regression", "Random Forest Classifier", "CNN"], 
+                              label_visibility="collapsed")
 
-if selected_model == 'linear_regression':
-    handle_tabular_model(ADVERTISING_FEATURE_NAMES, selected_model)
-elif selected_model == 'random_forest':
-    handle_tabular_model(WINE_QUALITY_FEATURE_NAMES, selected_model)
-elif selected_model == 'cnn':
-    handle_image_model(MNIST_DIGIT_IMAGE_SIZE, selected_model)
+if selected_model == 'Linear Regression':
+    handle_tabular_model(ADVERTISING_FEATURE_NAMES, "linear_regression")
+elif selected_model == 'Random Forest Classifier':
+    handle_tabular_model(WINE_QUALITY_FEATURE_NAMES, "random_forest")
+elif selected_model == 'CNN':
+    handle_image_model(MNIST_DIGIT_IMAGE_SIZE, "cnn")
 
 
 st.html("<div class='footer'>©2025 Rifqi Anshari Rasyid.</div>")
