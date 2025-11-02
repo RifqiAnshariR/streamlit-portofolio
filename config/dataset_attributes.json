@@ -1,0 +1,180 @@
+{
+    "advertising": {
+        "data_count": 200,
+        "feature_count": 3,
+        "feature_names": [
+            "TV",
+            "Radio",
+            "Newspaper"
+        ],
+        "top_5_rows": [
+            {
+                "TV": 230.1,
+                "Radio": 37.8,
+                "Newspaper": 69.2,
+                "Sales": 22.1
+            },
+            {
+                "TV": 44.5,
+                "Radio": 39.3,
+                "Newspaper": 45.1,
+                "Sales": 10.4
+            },
+            {
+                "TV": 17.2,
+                "Radio": 45.9,
+                "Newspaper": 69.3,
+                "Sales": 9.3
+            },
+            {
+                "TV": 151.5,
+                "Radio": 41.3,
+                "Newspaper": 58.5,
+                "Sales": 18.5
+            },
+            {
+                "TV": 180.8,
+                "Radio": 10.8,
+                "Newspaper": 58.4,
+                "Sales": 12.9
+            }
+        ],
+        "data_types": {
+            "TV": "float64",
+            "Radio": "float64",
+            "Newspaper": "float64",
+            "Sales": "float64"
+        },
+        "missing_values": {
+            "TV": 0,
+            "Radio": 0,
+            "Newspaper": 0,
+            "Sales": 0
+        },
+        "duplicate_count": 0
+    },
+    "wine_quality": {
+        "data_count": 1599,
+        "feature_count": 11,
+        "feature_names": [
+            "fixed_acidity",
+            "volatile_acidity",
+            "citric_acid",
+            "residual_sugar",
+            "chlorides",
+            "free_sulfur_dioxide",
+            "total_sulfur_dioxide",
+            "density",
+            "pH",
+            "sulphates",
+            "alcohol"
+        ],
+        "top_5_rows": [
+            {
+                "fixed_acidity": 7.4,
+                "volatile_acidity": 0.7,
+                "citric_acid": 0,
+                "residual_sugar": 1.9,
+                "chlorides": 0.076,
+                "free_sulfur_dioxide": 11,
+                "total_sulfur_dioxide": 34,
+                "density": 0.9978,
+                "pH": 3.51,
+                "sulphates": 0.56,
+                "alcohol": 9.4,
+                "quality": 5
+            },
+            {
+                "fixed_acidity": 7.8,
+                "volatile_acidity": 0.88,
+                "citric_acid": 0,
+                "residual_sugar": 2.6,
+                "chlorides": 0.098,
+                "free_sulfur_dioxide": 25,
+                "total_sulfur_dioxide": 67,
+                "density": 0.9968,
+                "pH": 3.2,
+                "sulphates": 0.68,
+                "alcohol": 9.8,
+                "quality": 5
+            },
+            {
+                "fixed_acidity": 7.8,
+                "volatile_acidity": 0.76,
+                "citric_acid": 0.04,
+                "residual_sugar": 2.3,
+                "chlorides": 0.092,
+                "free_sulfur_dioxide": 15,
+                "total_sulfur_dioxide": 54,
+                "density": 0.997,
+                "pH": 3.26,
+                "sulphates": 0.65,
+                "alcohol": 9.8,
+                "quality": 5
+            },
+            {
+                "fixed_acidity": 11.2,
+                "volatile_acidity": 0.28,
+                "citric_acid": 0.56,
+                "residual_sugar": 1.9,
+                "chlorides": 0.075,
+                "free_sulfur_dioxide": 17,
+                "total_sulfur_dioxide": 60,
+                "density": 0.998,
+                "pH": 3.16,
+                "sulphates": 0.58,
+                "alcohol": 9.8,
+                "quality": 6
+            },
+            {
+                "fixed_acidity": 7.4,
+                "volatile_acidity": 0.7,
+                "citric_acid": 0,
+                "residual_sugar": 1.9,
+                "chlorides": 0.076,
+                "free_sulfur_dioxide": 11,
+                "total_sulfur_dioxide": 34,
+                "density": 0.9978,
+                "pH": 3.51,
+                "sulphates": 0.56,
+                "alcohol": 9.4,
+                "quality": 5
+            }
+        ],
+        "data_types": {
+            "fixed_acidity": "float64",
+            "volatile_acidity": "float64",
+            "citric_acid": "float64",
+            "residual_sugar": "float64",
+            "chlorides": "float64",
+            "free_sulfur_dioxide": "float64",
+            "total_sulfur_dioxide": "float64",
+            "density": "float64",
+            "pH": "float64",
+            "sulphates": "float64",
+            "alcohol": "float64",
+            "quality": "int64"
+        },
+        "missing_values": {
+            "fixed_acidity": 0,
+            "volatile_acidity": 0,
+            "citric_acid": 0,
+            "residual_sugar": 0,
+            "chlorides": 0,
+            "free_sulfur_dioxide": 0,
+            "total_sulfur_dioxide": 0,
+            "density": 0,
+            "pH": 0,
+            "sulphates": 0,
+            "alcohol": 0
+        },
+        "duplicate_count": 240
+    },
+    "mnist_digit": {
+        "data_count": 100,
+        "image_size": [
+            28,
+            28
+        ]
+    }
+}

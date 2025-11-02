@@ -1,0 +1,164 @@
+{
+    "name": "Rifqi Anshari Rasyid",
+    "footer_name": "Rifqi Anshari Rasyid",
+    "cv_filename": "CV_Rifqi_Anshari_Rasyid.pdf",
+    "contact": {
+        "email": "ansharirifqi3@gmail.com",
+        "phone": "(+62) 878-1988-6804"
+    },
+    "socials": [
+        {
+            "name": "Linkedin",
+            "url": "https://www.linkedin.com/in/rifqiansharirasyid"
+        },
+        {
+            "name": "Github",
+            "url": "https://github.com/RifqiAnshariR"
+        }
+    ],
+    "experiences": [
+        {
+            "role": "PLC Programmer Intern",
+            "company": "PT Sugitama Intiarto",
+            "duration": "Jun 2022 – Jul 2022",
+            "description": "Developed PLC programs and designed HMI for a wafer machine system with three stages: tracking, creaming, cream spreading, and stacking, as well as a boiler machine controlled via PID.",
+            "details": [
+                "Final Project Score: 85 out of 100."
+            ]
+        },
+        {
+            "role": "Mechanical Division, KRSBI Beroda",
+            "company": "Universitas Indonesia Robotics Team",
+            "duration": "Mar 2020 – Mar 2021",
+            "description": "Designed, implemented, and maintained mechanical systems for keeper and striker robots.",
+            "details": [
+                "Participated in the 2021 Indonesian Robot Contest (KRI 2021)."
+            ]
+        }
+    ],
+    "educations": [
+        {
+            "degree": "Bachelor of Science in Instrumentation Physics",
+            "institution": "Universitas Indonesia",
+            "duration": "Jul 2019 – Jan 2025",
+            "score": "",
+            "gpa": "3.50",
+            "details": [
+                "Thesis: Design and Development of a Non-Invasive Vital Signs Monitoring System: Heart Rate, Body Temperature, and Respiratory Rate on an IoT-Based Wheelchair.",
+                "Relevant Coursework: Data Acquisition, Digital Signal Processing, Sensors & Actuators, Embedded Systems, and Control Systems."
+            ]
+        },
+        {
+            "degree": "Bootcamp AI & ML Engineer",
+            "institution": "dibimbing.id",
+            "duration": "Jul 2025 - Des 2025",
+            "score": "99/100",
+            "gpa": "",
+            "details": [
+                "Completed 44+ sessions on Python, data analysis, visualization, SQL/NoSQL, and machine learning including ANN, CNN, RNN, NLP, and computer vision.",
+                "Hands-on projects: AI chatbots, recommendation systems, and Streamlit portfolios with ML Ops deployment.",
+                "Professional development in CV/LinkedIn building, soft skills, and applied case studies with live coding tests."
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "title": "PLC and HMI Programming for Schneider-Based Cream Spreader Machine SCS-1H (PT. Sugitama)",
+            "description": "Jul 2022",
+            "technologies": [],
+            "link": ""
+        },
+        {
+            "title": "Image Classifier using CNN Algorithm",
+            "description": "March 2025",
+            "technologies": [],
+            "link": ""
+        },
+        {
+            "title": "RFM Analysis Online Retail",
+            "description": "Apr 2025",
+            "technologies": [],
+            "link": ""
+        },
+        {
+            "title": "Neural Networks from Scratch",
+            "description": "Mei 2025",
+            "technologies": [],
+            "link": ""
+        },
+        {
+            "title": "Random Forest Classifier with Flask API",
+            "description": "Mar 2025",
+            "technologies": [],
+            "link": ""
+        }
+    ],
+    "skills": [
+        {
+            "category": "Programming Languages",
+            "items": [
+                "Python",
+                "SQL",
+                "JavaScript (Node.js)",
+                "C++",
+                "HTML",
+                "CSS",
+                "MATLAB",
+                "LaTeX"
+            ]
+        },
+        {
+            "category": "Designing Tools",
+            "items": [
+                "Autodesk Inventor",
+                "AutoCAD",
+                "Proteus",
+                "Vijeo Designer"
+            ]
+        },
+        {
+            "category": "Others",
+            "items": [
+                "Microsoft Office",
+                "SQLite",
+                "MySQL",
+                "Git/GitHub",
+                "Postman"
+            ]
+        },
+        {
+            "category": "Soft Skills",
+            "items": [
+                "Critical thinking",
+                "adaptability",
+                "fast learning",
+                "teamwork",
+                "communication"
+            ]
+        }
+    ],
+    "certifications": [
+        {
+            "name": "Alibaba Cloud Certified Associate",
+            "issuer": "Alibaba",
+            "date": "Aug 2024",
+            "credential_id": "IACA02241000169832L"
+        },
+        {
+            "name": "Microsoft Certified: Azure Fundamentals",
+            "issuer": "Microsoft",
+            "date": "Jun 2025",
+            "credential_id": "CEC5A88C3F2CB55E"
+        }
+    ],
+    "languages": [
+        {
+            "name": "Bahasa Indonesia",
+            "proficiency": "Native"
+        },
+        {
+            "name": "English",
+            "proficiency": "Professional Working Proficiency"
+        }
+    ]
+}

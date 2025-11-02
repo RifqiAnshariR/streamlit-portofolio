@@ -1,0 +1,142 @@
+{
+    "linear_regression": {
+        "metrics": {
+            "RMSE": 1.78,
+            "R2": 0.899
+        },
+        "feature_importance": {
+            "TV": 3.735009,
+            "Radio": 2.79558,
+            "Newspaper": 0.043575
+        }
+    },
+    "random_forest": {
+        "metrics": {
+            "classification_report": {
+                "Average": {
+                    "precision": 0.9,
+                    "recall": 0.8,
+                    "f1-score": 0.85,
+                    "support": 334
+                },
+                "Bad": {
+                    "precision": 0.29,
+                    "recall": 0.26,
+                    "f1-score": 0.28,
+                    "support": 19
+                },
+                "Good": {
+                    "precision": 0.41,
+                    "recall": 0.71,
+                    "f1-score": 0.52,
+                    "support": 55
+                },
+                "macro_avg": {
+                    "precision": 0.54,
+                    "recall": 0.59,
+                    "f1-score": 0.55,
+                    "support": 408
+                },
+                "weighted_avg": {
+                    "precision": 0.81,
+                    "recall": 0.76,
+                    "f1-score": 0.78,
+                    "support": 408
+                }
+            },
+            "accuracy": 0.79
+        },
+        "feature_importance": {
+            "alcohol": 0.167147,
+            "sulphates": 0.164288,
+            "volatile_acidity": 0.151886,
+            "total_sulfur_dioxide": 0.097072,
+            "citric_acid": 0.074302,
+            "pH": 0.070948,
+            "free_sulfur_dioxide": 0.064922,
+            "fixed_acidity": 0.0586,
+            "chlorides": 0.052136,
+            "residual_sugar": 0.050675,
+            "density": 0.048024
+        }
+    },
+    "cnn": {
+        "metrics": {
+            "classification_report": {
+                "0": {
+                    "precision": 0.99,
+                    "recall": 1.00,
+                    "f1-score": 1.00,
+                    "support": 980
+                },
+                "1": {
+                    "precision": 1.00,
+                    "recall": 1.00,
+                    "f1-score": 1.00,
+                    "support": 1135
+                },
+                "2": {
+                    "precision": 1.00,
+                    "recall": 0.99,
+                    "f1-score": 0.99,
+                    "support": 1032
+                },
+                "3": {
+                    "precision": 0.98,
+                    "recall": 0.99,
+                    "f1-score": 0.99,
+                    "support": 1010
+                },
+                "4": {
+                    "precision": 1.00,
+                    "recall": 0.99,
+                    "f1-score": 0.99,
+                    "support": 982
+                },
+                "5": {
+                    "precision": 0.99,
+                    "recall": 0.99,
+                    "f1-score": 0.99,
+                    "support": 892
+                },
+                "6": {
+                    "precision": 1.00,
+                    "recall": 0.99,
+                    "f1-score": 0.99,
+                    "support": 958
+                },
+                "7": {
+                    "precision": 0.99,
+                    "recall": 0.99,
+                    "f1-score": 0.99,
+                    "support": 1028
+                },
+                "8": {
+                    "precision": 0.99,
+                    "recall": 0.99,
+                    "f1-score": 0.99,
+                    "support": 974
+                },
+                "9": {
+                    "precision": 0.98,
+                    "recall": 0.99,
+                    "f1-score": 0.99,
+                    "support": 1009
+                },
+                "macro_avg": {
+                    "precision": 0.99,
+                    "recall": 0.99,
+                    "f1-score": 0.99,
+                    "support": 10000
+                },
+                "weighted_avg": {
+                    "precision": 0.99,
+                    "recall": 0.99,
+                    "f1-score": 0.99,
+                    "support": 10000
+                }
+            },
+            "accuracy": 0.99
+        }
+    }
+}

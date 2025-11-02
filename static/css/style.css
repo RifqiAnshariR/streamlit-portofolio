@@ -1,0 +1,47 @@
+/* Reset dan Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div[data-baseweb="tab-list"] {
+    justify-content: space-between;
+    width: 100%;
+}
+
+button[data-baseweb="tab"] {
+    flex-grow: 1;
+    text-align: center;
+}
+
+img {
+    border-radius: 5%;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+.profile_img {
+    width: 200px;
+    height: 250px;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+ul.items {
+    padding-left: 30px;       
+    margin-bottom: 0px;
+}
+
+ul.items li {
+    line-height: 1.6;
+}
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 10px;
+    left: 0px;
+    text-align: center;
+    color: grey;
+    font-size: 1em;
+}
