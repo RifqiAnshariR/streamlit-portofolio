@@ -2,7 +2,6 @@ import os
 from pathlib import Path
 
 class Config:
-    # DIRECTORY PATHS
     # Folder paths
     BASE_DIR = Path(__file__).parent.parent
     ARTIFACTS_DIR = BASE_DIR / "artifacts"
@@ -16,11 +15,10 @@ class Config:
     FAVICON_PATH = STATIC_DIR / "img/favicon.ico"
     PROFILE_PHOTO_PATH = STATIC_DIR / "img/Foto_Rifqi Anshari Rasyid.jpg"
     # Data paths
-    CV_PATH = DATA_DIR / "profile/CV_Rifqi Anshari Rasyid.pdf"
     PERSONAL_INFO_PATH = CONFIG_DIR / "personal_info.json"
     DATASET_ATTRIBUTES_PATH = CONFIG_DIR / "dataset_attributes.json"
-    MODEL_ATTRIBUTES_PATH = CONFIG_DIR / "model_attributes.json"
     TRAIN_RECORDS_PATH = CONFIG_DIR / "train_records.json"
+    CV_PATH = DATA_DIR / "profile/CV_Rifqi Anshari Rasyid.pdf"
     BUTTERFLY_DATASET_PATH = DATA_DIR / "datasets/butterfly"
     ADVERTISING_DATASET_PATH = DATA_DIR / "datasets/advertising.csv"
     CALIFORNIA_HOUSING_DATASET_PATH = DATA_DIR / "datasets/california_housing.csv"
@@ -30,8 +28,8 @@ class Config:
     # Artifact paths
     OUTLIER_PLOT_ADVERTISING = ARTIFACTS_DIR / "dataset_advertising/outlier.png"
     DISTRIBUTION_PLOT_ADVERTISING = ARTIFACTS_DIR / "dataset_advertising/distribution.png"
-    OUTLIER_PLOT_WINEQUALITY = ARTIFACTS_DIR / "dataset_winequality/outlier.png"
-    CONFUSION_MATRIX_PLOT_WINEQUALITY = ARTIFACTS_DIR / "dataset_winequality/confusion_matrix.png"
+    OUTLIER_PLOT_WINE_QUALITY = ARTIFACTS_DIR / "dataset_wine_quality/outlier.png"
+    CONFUSION_MATRIX_PLOT_WINE_QUALITY = ARTIFACTS_DIR / "dataset_wine_quality/confusion_matrix.png"
     LOSS_PLOT_MNIST = ARTIFACTS_DIR / "dataset_mnist/loss.png"
     CONFUSION_MATRIX_PLOT_MNIST = ARTIFACTS_DIR / "dataset_mnist/confusion_matrix.png"
     # Model paths
@@ -39,7 +37,6 @@ class Config:
     RF_MODEL_PATH = MODELS_DIR / "rf_model.pkl"
     CNN_MODEL_PATH = MODELS_DIR / "cnn_model.keras"
 
-    # CONFIGURATIONS
     # Logging configuration
     LOG_FILE = LOGS_DIR / "app.log"
     LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
@@ -58,7 +55,7 @@ class Config:
     MENU_ITEMS = {
         'Get Help': 'https://docs.streamlit.io/',
         'Report a bug': 'https://github.com/streamlit/streamlit/issues',
-        'About': 'Aplikasi ini dibuat dengan Streamlit'
+        'About': 'This site made with Streamlit and FastAPI.'
     }
     # Cache settings
     CACHE_TTL = 3600
