@@ -30,8 +30,8 @@ class Config:
     DISTRIBUTION_PLOT_ADVERTISING = ARTIFACTS_DIR / "dataset_advertising/distribution.png"
     OUTLIER_PLOT_WINE_QUALITY = ARTIFACTS_DIR / "dataset_wine_quality/outlier.png"
     CONFUSION_MATRIX_PLOT_WINE_QUALITY = ARTIFACTS_DIR / "dataset_wine_quality/confusion_matrix.png"
-    LOSS_PLOT_MNIST = ARTIFACTS_DIR / "dataset_mnist/loss.png"
-    CONFUSION_MATRIX_PLOT_MNIST = ARTIFACTS_DIR / "dataset_mnist/confusion_matrix.png"
+    LOSS_PLOT_MNIST_DIGIT = ARTIFACTS_DIR / "dataset_mnist/loss.png"
+    CONFUSION_MATRIX_PLOT_MNIST_DIGIT = ARTIFACTS_DIR / "dataset_mnist/confusion_matrix.png"
     # Model paths
     LR_MODEL_PATH = MODELS_DIR / "lr_model.pkl"
     RF_MODEL_PATH = MODELS_DIR / "rf_model.pkl"

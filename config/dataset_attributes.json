@@ -7,6 +7,7 @@
             "Radio",
             "Newspaper"
         ],
+        "target_names": ["Sales"],
         "top_5_rows": [
             {
                 "TV": 230.1,
@@ -69,6 +70,7 @@
             "sulphates",
             "alcohol"
         ],
+        "target_names": ["quality"],
         "top_5_rows": [
             {
                 "fixed_acidity": 7.4,
