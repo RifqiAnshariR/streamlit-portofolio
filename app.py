@@ -23,17 +23,16 @@ def get_json(file_path):
 
 
 try:
-    dataset_attributes_info = get_json(Config.DATASET_ATTRIBUTES_PATH)
-    model_attributes_info = get_json(Config.MODEL_ATTRIBUTES_PATH)
-    train_records_info = get_json(Config.TRAIN_RECORDS_PATH)
+    dataset_attributes = get_json(Config.DATASET_ATTRIBUTES_PATH)
+    train_records = get_json(Config.TRAIN_RECORDS_PATH)
 except FileNotFoundError as e:
     logger.error(f"Failed to load essential asset: {e}")
     raise RuntimeError(f"Failed to load essential asset: {e}")
 
 
-advertising_dataset_info = dataset_attributes_info.get("advertising", {})
-wine_quality_dataset_info = dataset_attributes_info.get("wine_quality", {})
-mnist_digit_dataset_info = dataset_attributes_info.get("mnist_digit", {})
+advertising_dataset_info = dataset_attributes.get("advertising", {})
+wine_quality_dataset_info = dataset_attributes.get("wine_quality", {})
+mnist_digit_dataset_info = dataset_attributes.get("mnist_digit", {})
 
 ADVERTISING_FEATURE_COUNT = advertising_dataset_info.get('feature_count', 'N/A')
 ADVERTISING_FEATURE_NAMES = advertising_dataset_info.get('feature_names', 'N/A')
